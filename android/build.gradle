@@ -15,7 +15,7 @@ def safeExtGet(prop, fallback) {
 
 def _reactNativeVersion = safeExtGet("reactNative", "+")
 def _compileSdkVersion = safeExtGet("compileSdkVersion", 26)
-def _glideVersion = safeExtGet("glideVersion", "4.7.1")
+def _glideVersion = safeExtGet("glideVersion", "4.9.0")
 
 android {
     compileSdkVersion _compileSdkVersion
@@ -65,4 +65,5 @@ dependencies {
         exclude group: "com.android.support", module: "okhttp3-integration"
         exclude group: "com.android.support", module: "glide-parent"
     }
+    annotationProcessor 'androidx.annotation:annotation:1.0.0'
 }
